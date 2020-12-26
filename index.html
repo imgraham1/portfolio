@@ -8,6 +8,19 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Iain Graham</title>
     <link rel="icon" href="images/rounded.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJS3QJ1GD4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NJS3QJ1GD4');
+    </script>
+
+
+
+
   </head>
 
 
@@ -22,13 +35,13 @@
       <nav id='navigaition'>
         <ul class='nav_links'>
           <li><a href='#project_section'>Projects</a></li>
+          <li><a href='#skills'>Skills</a></li>
           <li><a href='#course_section'>Coursework</a></li>
           <li><a href='#about_me'>About</a></li>
           <li><a href='#contact_me'>Contact</a></li>
         </ul>
       </nav>
-	<a href="pdfs/Resume.pdf" class="cta"><button>Resume</button></a>
-<!--       <a class='cta' href='pdfs/Resume.pdf'><button>Resume</button></a> -->
+      <a class='cta' href='pdfs/resume.pdf'><button>Resume</button></a>
     </header>
   </div>
 
@@ -50,21 +63,22 @@
 
 <div class='projects' id='project_section'>
 <p id='project_title'>Projects<br><br></p>
-<p>Featured Projects:</p>
+<p>Recent Projects:</p>
 <div class='proj_container'>
 
 <!-- beginning one project entry -->
-  <div class='project_entry'><h1>Project Title</h1><br>
+  <div class='project_entry'><h1>Detecting COVID-19 Cases Using Lung CT Scans</h1><br>
     <ul>
-      <li>Project category 1</li>
-      <li>Project</li>
-      <li>Project category 1</li>
+      <li>Machine Learning</li>
+      <li>Neural Networks</li>
+      <li>Deep Learning</li>
+      <li>Data Augmentation</li>
     </ul>
     <br><br>
-  <img src="nn.png" alt="nn diagram" height=150px width=250px align='left' /><div>In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo. In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo.
+  <img src="images/lung.png" alt="lung" height=75px width=125px align='left' /><div>As the COVID-19 pandemic continues to effect people around the world, it is becoming increasingly important to develop novel methods for detecting whether or not an individual actually has the virus. This project explores a method of detecting positive cases of COVID-19 using deep learning and images of CT scans of lungs. We found a that it is possible to achieve an accuracy of roughly 90% after implementing pre-trained convolutional neural network models. The dataset we used contained 334 images of positive cases and 373 images of negative cases. To begin, we used data augmentation techniques to increase the size of the training dataset to a total of 2,121 images so that our networks would have better performance and better generalizability. We implemented a total of 4 different approaches to - a feed forward neural network using scikit learn and basic CNN using keras which were both trained from scratch, and we retrained the last layers of the resnet and VGG-16 pre-trained CNNs. As we expected, the neural network worst performance based off of the accuracy metric, followed by the basic CNN achieving accuracies of 62% and 74% respectively. The resnet model achieved an accuracy of 81% while the VGG-16 model achieved 91% accuracy. These results showed us that using images of CT scans of lungs could potentially provide a promising approach to classify whether or not an individual has COVID-19. Considering some of the concerns of validity/accuracy of current testing approaches, these findings become increasingly intriguing. Using the approaches we explored in this project have the potential to improve the ability to correctly diagnose cases of COVID-19 if we use them in combination with some of the current approaches.
   </div>
 <br>
-  <div class='project_footer'>
+  <!-- <div class='project_footer'>
     See more on:<br><br>
     <ul>
       <li><a href='https://github.com/imgraham1'>GitHub</a></li>
@@ -72,23 +86,48 @@
       <li><a href='https://github.com/imgraham1'>Poster</a></li>
       <li><a href='https://github.com/imgraham1'>Medium</a></li>
     </ul>
-  </div>
+  </div> -->
   </div>
 <!-- ending one project entry -->
 
 
 <!-- beginning one project entry -->
-  <div class='project_entry'><h1>Project Title</h1><br>
+  <div class='project_entry'><h1>Vertical Search Engine from Scratch</h1><br>
     <ul>
-      <li>Project category 1</li>
-      <li>Project</li>
-      <li>Project category 1</li>
+      <li>Information Retrieval</li>
+      <li>NLP</li>
+      <li>Flask</li>
     </ul>
     <br><br>
-  <img src="nn.png" alt="nn diagram" height=150px width=250px align='left' /><div>In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo. In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo.
+  <img src="images/shuttle.jpg" alt="shuttle" height=100px width=175px align='left' /><div>Vertical search engines help people access domain-specific information quickly. In a lot of cases, they are better resources for people to use compared to general-purpose search engines if they are in search of specific information that is related to a unique field. This purpose of this project is to build a vertical search engine from scratch surrounding space exploration and explore various term weighting ranking functions to bring the benefits of vertical search to an increasingly popular domain. I scraped data from a variety of different sources and ended up with a collection of over 2,000 on topics surrounding the shuttle and Apollo space flight missions. The documents were cleaned by lower casing and removing stop words, punctuation, and special characters. Additionally, documents that were shorter than 30 tokens (words) were dropped from the corpus, and document length was truncated at 2,000 tokens. To evaluate the performance of each ranking function, I created a set of 20 test queries and annotated the relevant “responses” that should be returned given the test query. Results were then evaluated based on recall and precision. I tested 7 different term-weighting ranking algorithms including TF-IDF, term frequency, BM-25, BM-25L, BM-25+, axiomatic approach, and divergence from randomness. The logic behind these algorithms is to rank documents based off of weighting terms that occur in a document, given the terms in the query. The best performing function in terms of speed and performance was the axiomatic approach, which is what I chose to power the final product. The engine is deployed using a Flask framework and hosted on PythonAnywhere.
   </div>
 <br>
   <div class='project_footer'>
+    See more on:<br><br>
+    <ul>
+      <li><a href='http://imgraham1.pythonanywhere.com/'>Finished product</a></li>
+      <li><a href='https://imgraham1996.medium.com/building-deploying-a-vertical-search-engine-from-scratch-a48bde9447aa'>Medium</a></li>
+      <!-- <li><a href='https://github.com/imgraham1'>Poster</a></li>
+      <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
+    </ul>
+  </div>
+  </div>
+<!-- ending one project entry -->
+
+
+
+<!-- beginning one project entry -->
+  <div class='project_entry'><h1>Echo Chambers in Twitter Political Networks</h1><br>
+    <ul>
+      <li>Networks</li>
+      <li>Data Manipulation</li>
+      <li>Time Series</li>
+    </ul>
+    <br><br>
+  <img src="images/network.png" alt="network" height=150px width=250px align='left' /><div>Echo chambers occur in spaces when people of similar beliefs only interact with individuals that possess those same beliefs and are commonly found among topics that are highly polarizing. Examining political conversations on Twitter using network science can allow us to see the presence of echo chambers, and more interestingly how they evolve over time. We create and examine networks using Twitter data from March-November 2020 to see how characteristics of echo chambers change over time during the U.S.presidential election. To examine these networks, we first had to label ideological preferences of the Twitter users we had data for by using keywords and hashtags that were pre-determined as being either liberal or conservative. Once this step was completed, we constructed 9 different networks - 1 representing each month from Mar-Nov - where nodes represented users and un-directed links represented mentions between users (I.e. there is a link between a and b if a mentions b, or if b mentions a). We examined centrality measures of betweenness, degree, and XXX in each of these networks as a way to observe how their characteristics and presence of echo chambers evolve over time. We initially hypothesized that echo chambers would become more prevalent as the election neared, however we found that the concentration of users with the same political beliefs decreased across time, that is there was less likely to be echo chambers present as the election approached. These findings were interesting because they give evidence that people are less likely to find themselves in an echo chamber and more likely to be having conversation with people of opposing beliefs during an important point in politics when these interactions are undoubtedly important to have.
+  </div>
+<br>
+  <!-- <div class='project_footer'>
     See more on:<br><br>
     <ul>
       <li><a href='https://github.com/imgraham1'>GitHub</a></li>
@@ -96,17 +135,37 @@
       <li><a href='https://github.com/imgraham1'>Poster</a></li>
       <li><a href='https://github.com/imgraham1'>Medium</a></li>
     </ul>
-  </div>
+  </div> -->
   </div>
 <!-- ending one project entry -->
+
+<!-- beginning one project entry -->
+  <div class='project_entry'><h1>Word2Vec from Scratch</h1><br>
+    <ul>
+      <li>NLP</li>
+      <li>Machine Learning</li>
+    </ul>
+    <br><br>
+  <img src="images/word2vec.png" alt="nn diagram" height=100px width=200px align='left' /><div>Natural language processing allows us to apply data science techniques to human language. Unfortunately, many of the popular methods in areas like machine learning, among others, are not able to directly deal with raw text as input. Converting tokens into word vectors allows us to represent human language as in a way that lets us leverage more data science techniques. The word2vec algorithm is likely the most effective way to make this conversion because it allows words to retain their semantic meaning. In this project I implement the state of the art word2vec algorithm from scratch using python and a dataset of Amazon reviews. To begin I removed stopwords, punctuation, and special characters as well as replaced the rare words with an <unk> token and dropped the overly common words. These filter decisions helps the algorithm better capture the meaning of words by not learning from the noise of frequent or in-frequent occurrences. This algorithm learns representations of words by looking at the tokens before and after the target word so that the vectors capture their meaning. I built this algorithm using gradient descent and negative sampling, as well as included an adjustable window so the window before and after the target word can be a tunable parameter to ensure you learn the best representation of each word. Once the model ran, I was able to use the created vectors to see the most similar words to each other, complete analogies, add and subtract words, and use them in different machine learning/data science tasks. To evaluate the success of my implementation I computed the top 10 most similar words to each word in the vocabulary using cosine similarity to ensure that words that are similar (I.e. big and large) were amongst the most similar returned words.
+  </div>
+<br>
+  <!-- <div class='project_footer'>
+    See more on:<br><br>
+    <ul>
+      <li><a href='https://github.com/imgraham1'>GitHub</a></li>
+      <li><a href='https://github.com/imgraham1'>Paper</a></li>
+      <li><a href='https://github.com/imgraham1'>Poster</a></li>
+      <li><a href='https://github.com/imgraham1'>Medium</a></li>
+    </ul>
+  </div> -->
+  </div>
+<!-- ending one project entry -->
+
+
+
+
 </div>
 </div>
-
-
-
-
-
-
 
 
 <button type="button" class="collapsible"></button>
@@ -114,24 +173,27 @@
   <p>
     <div class='proj_container'>
 
+
+
+
     <!-- beginning one project entry -->
-      <div class='project_entry'><h1>Project Title</h1><br>
+      <div class='project_entry'><h1>A New Approach to Evaluating Summarization Methods</h1><br>
         <ul>
-          <li>Project category 1</li>
-          <li>Project</li>
-          <li>Project category 1</li>
+          <li>NLP</li>
+          <li>Machine Learning</li>
+          <li>Summarization</li>
         </ul>
         <br><br>
-      <img src="nn.png" alt="nn diagram" height=150px width=250px align='left' /><div>In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo. In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo.
+      <img src="images/pointer.png" alt="pointer" height=100px width=150px align='left' /><div>Summarization is meaningful because it simplifies long, complex pieces of text into shorter, more digestible documents. There are three main approaches to summarization - extractive (i.e. copying the most useful text directly from the main document), abstractive (i.e. generating new text that covers the most important parts of the main document), and hybrid models(i.e. copying and generating text). All of these methods are typically evaluated based on the ROUGE metric. This evaluation method is effective at telling us how much information from the original text is captured in the summary, however in this project I argue that it should not be the only metric that is considered because it fails to address whether or not the summary becomes less complex. I implement variations of the three different summarization methods - the TextRank extractive method, sequence2sequence abstractive method, and the state of the art pointer-generator approach for the hybrid approach, and evaluate them based on the Improvement in readability in addition to the ROUGE metric. Evaluating based on readability gives us a better idea of how effective the summary is by offering a measure of how much more comprehendible the summaries produced are. The pointer-generator model performed the best by achieving the highest ROUGE scores, as well as a meaningful decrease in complexity because of it’s architecture and ability to pull out a lot of the important text (e.g. what leads to the high ROUGE scores) as well it’s ability to generate new, less complex text (e.g. what leads to the decrease in text complexity).
       </div>
     <br>
       <div class='project_footer'>
         See more on:<br><br>
         <ul>
-          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
-          <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://imgraham1996.medium.com/exploring-a-different-approach-for-evaluating-summarization-methods-c6cefe28039e'>Medium</a></li>
+          <!-- <li><a href='https://github.com/imgraham1'>Paper</a></li>
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
-          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
         </ul>
       </div>
       </div>
@@ -139,23 +201,23 @@
 
 
     <!-- beginning one project entry -->
-      <div class='project_entry'><h1>Project Title</h1><br>
+      <div class='project_entry'><h1>AirBnB in NYC and the Effect on the Rental Market</h1><br>
         <ul>
-          <li>Project category 1</li>
-          <li>Project</li>
-          <li>Project category 1</li>
+          <li>Data Visualization</li>
+          <li>Data Manipulation</li>
+          <li>Storytelling</li>
         </ul>
         <br><br>
-      <img src="nn.png" alt="nn diagram" height=150px width=250px align='left' /><div>In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo. In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo.
+      <img src="images/nyc.jpg" alt="nyc" height=150px width=250px align='left' /><div>[note: this project was completed before COVID-19] AirBnB has revolutionized travel and the tourism industry - especially in cities that draw a lot of tourists. Allowing tenants to rent out excess space they have allows them to generate income while also giving someone a place to stay - a seemingly win-win scenario that makes both parties better off, however there is potential adverse effects on the rental market that could be harming tenants more than they think. In this project, we examine the relationship between airBnBs and the rental market in New York City through a series of informative and interactive visualizations. We used data from 2008 to 2020 that was collected from airBnB and streeteasy. The series of visualizations lets the data tell an interesting story and gives users the opportunity to interact with the data themselves to better understand the impacts of airBnB in NYC.
       </div>
     <br>
       <div class='project_footer'>
         See more on:<br><br>
         <ul>
-          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
-          <li><a href='https://github.com/imgraham1'>Paper</a></li>
-          <li><a href='https://github.com/imgraham1'>Poster</a></li>
-          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+          <li><a href='https://imgraham1.github.io/Airbnb_data_viz_project/'>Finished Product</a></li>
+          <li><a href='https://github.com/imgraham1/Airbnb_data_viz_project'>GitHub</a></li>
+          <!-- <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
         </ul>
       </div>
       </div>
@@ -163,17 +225,17 @@
 
 
     <!-- beginning one project entry -->
-      <div class='project_entry'><h1>Project Title</h1><br>
+      <div class='project_entry'><h1>Text Classification from Scratch</h1><br>
         <ul>
-          <li>Project category 1</li>
-          <li>Project</li>
-          <li>Project category 1</li>
+          <li>NLP</li>
+          <li>Machine Learning</li>
+          <li>Text Classification</li>
         </ul>
         <br><br>
-      <img src="nn.png" alt="nn diagram" height=150px width=250px align='left' /><div>In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo. In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo.
+      <img src="images/class.jpg" alt="class" height=150px width=250px align='left' /><div>Text classification is a widely used method by NLP practitioners to determine if a given piece of text belongs to a certain category and I’d frequently used in tasks like sentiment analysis and spam detection. In this project, I code the näive bayes and logistic regression algorithms from scratch using Python to classify tweets as offensive or not offensive. The näive bayes algorithm classifies tweets by calculating the probability of the tweet being offensive given the tweet, as well as the probability of the tweet being not offensive given the tweet. Using this model I was able to achieve an accuracy of 79% correct classification. The logistic regression implementation uses a sigmoid activation function and gradient decent to learn a function to best approximate the output class given an input tweet. Using the logistic regression approach allowed me to achieve an accuracy of 82% correct classification. Coding both of these algorithms from scratch gave me a deep understanding of both approaches and a better understanding of how to correctly turn algorithms into code.
       </div>
     <br>
-      <div class='project_footer'>
+      <!-- <div class='project_footer'>
         See more on:<br><br>
         <ul>
           <li><a href='https://github.com/imgraham1'>GitHub</a></li>
@@ -181,23 +243,24 @@
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
           <li><a href='https://github.com/imgraham1'>Medium</a></li>
         </ul>
-      </div>
+      </div> -->
       </div>
     <!-- ending one project entry -->
 
 
     <!-- beginning one project entry -->
-      <div class='project_entry'><h1>Project Title</h1><br>
+      <div class='project_entry'><h1>Web Scraping and Databases</h1><br>
         <ul>
-          <li>Project category 1</li>
-          <li>Project</li>
-          <li>Project category 1</li>
+          <li>Web Scraping</li>
+          <li>SQL</li>
+          <li>Relational Databases</li>
+          <li>Flask</li>
         </ul>
         <br><br>
-      <img src="nn.png" alt="nn diagram" height=150px width=250px align='left' /><div>In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo. In dignissim imperdiet vestibulum. Donec egestas, ante et ultricies mattis, augue dolor venenatis ligula, nec tempus nisl turpis ut dolor. Quisque ac bibendum dui. Aenean consequat nulla ante, porttitor scelerisque nisi condimentum eu. Duis sed neque ut nibh auctor posuere. Nam facilisis vel ex at tempor. Nunc non quam vitae sem malesuada pulvinar. Mauris ullamcorper tincidunt nisi, in accumsan mi tincidunt at. Maecenas rhoncus arcu ac leo dapibus lacinia. Mauris vulputate eros eu purus rhoncus, vitae molestie leo consectetur. Donec sit amet turpis vel nunc scelerisque luctus. Vestibulum suscipit metus in ante aliquam, vitae ultrices mauris commodo.
+      <img src="images/database.png" alt="database" height=150px width=250px align='left' /><div>In college athletics, schools are commonly labeled as being either a “basketball” school or a “football” school based on which team usually performs better. This project uses a combination of web scraping, databases, Python, and Flask to create a resource for people that allows them to quickly access information about a school’s basketball and football team so that they can determine which sport they are better at. I began this project by crawling three different websites using the beautifulsoup4 package to collect data on 236 college’s basketball and football teams and crawled a total of webpages to collect all of the data. As I scraped the data, I populated a SQLite relational database that contains 5 tables.  I used user inputs to generate SQL queries that would extract the relevant information to the users search term. I used Flask to give users an intuitive interface to create their queries and have the results displayed to them in an easy to read way.
       </div>
     <br>
-      <div class='project_footer'>
+      <!-- <div class='project_footer'>
         See more on:<br><br>
         <ul>
           <li><a href='https://github.com/imgraham1'>GitHub</a></li>
@@ -205,7 +268,58 @@
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
           <li><a href='https://github.com/imgraham1'>Medium</a></li>
         </ul>
+      </div> -->
       </div>
+    <!-- ending one project entry -->
+
+
+    <!-- beginning one project entry -->
+      <div class='project_entry'><h1>Consulting Project</h1><br>
+        <ul>
+          <li>Consulting</li>
+          <li>Technology</li>
+          <li>Data</li>
+        </ul>
+        <br><br>
+      <img src="images/consult.png" alt="consult" height=150px width=250px align='left' /><div>In this project, I was a part of a group that was assigned to a small business in Ann Arbor, MI to help the owner make better use of their data and technology to increase revenue. We conducted 4 interviews with past customers and 2 meetings with the business owner to gather information that would help us make a recommendation on how they could implement to earn more revenue. We were also able to work with the data collected from business transactions and website traffic that we considered when constructing our implementation. After analyzing the data fromo our interviews and meetings, we noticed that the business was struggling to get repeat customers. Because of this, we chose to propose a recommendation that focused on this shortcoming. We suggested that the business owner implements a strict follow up to each transaction as well as an email newsletter so that they could stay in contact and remain engaged with their customers. We helped the business owner implement these recommendations by suggesting different technologies that they could leverage to ensure that this solution was easy to maintain.
+      </div>
+    <br>
+      <!-- <div class='project_footer'>
+        See more on:<br><br>
+        <ul>
+          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
+          <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+        </ul>
+      </div> -->
+      </div>
+    <!-- ending one project entry -->
+
+
+
+
+
+    <!-- beginning one project entry -->
+      <div class='project_entry'><h1>Topic Modelling</h1><br>
+        <ul>
+          <li>NLP</li>
+          <li>Machine Learning</li>
+          <li>Topic Modelling</li>
+        </ul>
+        <br><br>
+      <img src="images/topic.png" alt="topic" height=150px width=250px align='left' /><div>Topic modeling is a way to discover the main topics/ideas that are present in a long pice of text. In this project I implement 3 different approaches of topic modeling applied to a dataset made up of random Wikipedia articles. The first approach I use is latent dirichlet allocation using Gibbs-sampling. The next two implementations I used were from the Gensim and Mallet  libraries. After analyzing the topics resulting from each method, I came to the conclusion that the Mallet implementation was the best approach because it was the fastest and produced the most accurate topics based on my own judgement. Working with these three different approaches for topic modeling gave me a good amount of experience working with topic modeling that are easily transferable to different real world problems.
+      </div>
+    <br>
+      <!-- <div class='project_footer'>
+        See more on:<br><br>
+        <ul>
+          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
+          <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+        </ul>
+      </div> -->
       </div>
     <!-- ending one project entry -->
 
@@ -221,6 +335,78 @@
 
   </p>
 </div>
+
+
+
+
+
+
+
+<div class='projects' id='skills'>
+<p id='project_title'>Skills<br><br></p>
+<p>Some of the languages, tools, and methods I have experience with</p>
+
+<div class='proj_container'>
+
+  <div class='skill_section'>
+    <div>Python</div>
+    <div>R</div>
+    <div>SQL</div>
+    <div>Jupyter</div>
+    <div>Julia</div>
+    <div>Tableau</div>
+    <div>HTML & CSS</div>
+    <div>Machine Learning</div>
+    <div>Linear Regression</div>
+    <div>Logistic Regression</div>
+    <div>SVM</div>
+    <div>Decision Trees</div>
+    <div>Random Forest</div>
+    <div>Boosting & Bagging</div>
+    <div>XGBoost</div>
+    <div>Regularization</div>
+    <div>NLP</div>
+    <div>Data Visualization</div>
+    <div>Data Analysis</div>
+    <div>Information Retrieval</div>
+    <div>Data Mining</div>
+    <div>Hadoop</div>
+    <div>Spark</div>
+    <div>Clustering</div>
+    <div>K-Means Clustering</div>
+    <div>Data Mining</div>
+    <div>Pandas</div>
+    <div>NumPy</div>
+    <div>Seaborn</div>
+    <div>Scikit Learn</div>
+    <div>TensorFlow</div>
+    <div>Altair</div>
+    <div>PyTorch</div>
+    <div>TF-IDF</div>
+    <div>Neural Networks</div>
+    <div>Deep Learning</div>
+    <div>Convolutional Neural Nets</div>
+    <div>PageRank</div>
+    <div>Apriori Algorithm</div>
+    <div>Web Scraping</div>
+    <div>Map-Reduce</div>
+    <div>Document Ranking</div>
+  </div>
+
+
+</div>
+</div>
+
+
+<!-- Python (Pandas, NumPy, Seaborn, Altair, Plotly, Scikit learn, TensorFlow, PyTorch, keras, NLTK), R, machine learning(unsupervised & supervised learning, regression, classification, clustering), natural language processing (NLP), information visualization, data analysis, information retrieval, data mining, SQL, Hadoop, Spark, HTML, CSS, Tableau  -->
+
+
+
+
+
+
+
+
 
 
 <div class='projects' id='course_section'>
@@ -370,22 +556,11 @@
 
 <img src="images/me.jpeg" alt="usc" height=300px width=300 align='left'>
 <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit leo sed varius aliquet. Duis vitae est lacus. Donec tellus elit, sollicitudin non purus id, malesuada scelerisque lectus. Nulla nec sagittis risus. Sed mollis nibh sed justo dapibus tincidunt mollis nec lorem. In viverra nunc nec lorem dictum, et consectetur eros pretium. Nam viverra eros id congue sollicitudin. In commodo, velit et consectetur hendrerit, nibh urna consequat eros, eu accumsan lectus dui in nibh. Curabitur dolor nisl, convallis sed venenatis eget, hendrerit id libero. Quisque et metus at eros laoreet euismod. Donec venenatis, purus id porttitor interdum, felis eros elementum sapien, nec imperdiet libero lorem ut nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec libero velit, mattis vel lectus ut, feugiat vestibulum turpis. Morbi ut convallis nunc. Nam sit amet placerat leo. Quisque hendrerit, nunc at suscipit luctus, lacus nisl tincidunt sapien, eget finibus purus augue eget dolor.
-  <br>
+Hi! I'm Iain. I'm currently finishing up my second year of grad school and Michigan where I'm studying data science. Before Michigan I studied economics at the University of South Carolina. <br><br>
+I'm motivated by interesting and challenging problems, and am passionate about leveraging data to help solve them. Studying economics helped me develop strong problem solving skills based on logic. It's also motivated me to start programming, which is how I became interested in data science. Being at Michigan has given me the opportunity to grow tremendously. In my short time in Ann Arbor, I've gone from an inexperienced programmer with a light math background to someone who is confident in their ability to use programming, data, and math to solve advanced and complex problems.<br><br>
+I'm an extremely hard worker, expect a lot out of myself, and give whatever I'm working on my full focus and best effort. I enjoy challenging myself and stepping outside of my comfort zone because I think it pushes me to learn and grow. I like to put myself in situations where I'm not the smartest person in the room and often times enjoy the process of failing over success. At the end of the day, I pride myself on being driven and open to learn new things which are things that have led me to success in the past and I think will continue to help me in the future.<br><br>
+I'm a big sports fan. I love college football and basketball. Because I went to South Carolina I'm Gamecocks fan and follow SCar athletics pretty closely. I've played golf for close to 15 years now and love getting out to the course whenever I've got time. I really enjoy being outside and amongst nature. I have a Jeep and like to work on it whenever I have the opportunity and try to always do the maintenence myself. I love travelling and experiencing new cultures (I know, so cliché). I'm a big Mexican food guy, there's nothing quite like some good chips and salsa. Lately I've been pretty interested in following the stock market and investing. My favorite show is probably Seinfeld, I've probably watched it close to 15 times at this point. I'm trying to read more, the next book on my to-read list is Wim Hof's "The Wim Hof Method".<br><br>Thats about it I think, nothing too crazy I guess. Anyways, if you made it this far, thanks for reading! Message me if you're curious about anything or have any questions
 
-Morbi mattis quis justo et mollis. Nullam ante nisi, commodo vitae nunc et, pellentesque iaculis diam. Aliquam at arcu sit amet tellus bibendum tincidunt. Suspendisse potenti. Ut eros magna, sollicitudin ut lorem vel, porta semper felis. Vestibulum at dictum ex, eget dapibus enim. Nulla enim nunc, scelerisque sit amet ligula id, imperdiet fringilla nibh. Quisque dignissim nec leo eget lacinia. Nulla fermentum vehicula metus sit amet rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam euismod accumsan velit et dictum. Integer lacinia ullamcorper fermentum. Donec elit arcu, euismod eget aliquam finibus, luctus scelerisque nibh. Ut condimentum ante et arcu gravida tincidunt. Nulla bibendum posuere augue, vel venenatis turpis rutrum sed. Donec eu semper neque.
-
-<br>
-
-Donec eu nibh at risus convallis sollicitudin. Sed et mollis tellus. Ut fringilla nibh ac purus ultricies, eu imperdiet quam condimentum. In facilisis orci purus, sit amet blandit lacus condimentum elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus accumsan nulla et lorem egestas commodo. Donec tincidunt dictum enim iaculis congue. In sit amet massa mollis, maximus risus at, hendrerit elit. Morbi accumsan interdum dapibus. Donec nec commodo lacus.
-
-<br>
-
-Sed dapibus lectus dictum ligula accumsan, ut hendrerit lacus ullamcorper. Morbi rhoncus mi id lacus scelerisque, eu egestas urna sollicitudin. Integer ullamcorper rhoncus massa fermentum condimentum. Nam maximus sagittis consequat. Vestibulum dictum diam sit amet elit faucibus, ut iaculis quam porta. Curabitur et interdum ligula, ac scelerisque purus. Vivamus porttitor, nisl ac efficitur interdum, libero nisi faucibus lacus, vel tempor nisi ex in purus. In id lectus varius, tristique sapien lobortis, ornare nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac neque in sapien faucibus placerat. Donec sed ante ut quam posuere malesuada et quis dolor.
-
-<br>
-
-Sed dapibus lectus dictum ligula accumsan, ut hendrerit lacus ullamcorper. Morbi rhoncus mi id lacus scelerisque, eu egestas urna sollicitudin. Integer ullamcorper rhoncus massa fermentum condimentum. Nam maximus sagittis consequat. Vestibulum dictum diam sit amet elit faucibus, ut iaculis quam porta. Curabitur et interdum ligula, ac scelerisque purus. Vivamus porttitor, nisl ac efficitur interdum, libero nisi faucibus lacus, vel tempor nisi ex in purus. In id lectus varius, tristique sapien lobortis, ornare nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac neque in sapien faucibus placerat. Donec sed ante ut quam posuere malesuada et quis dolor.
 </p>
 
 </div>

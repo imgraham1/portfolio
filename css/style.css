@@ -513,6 +513,33 @@ input:checked + section.box .box-title:before {
 
 
 
+
+/* SKILL SECTION###################################################################################################################################### */
+.skill_section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.skill_section div{
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  margin: 7px;
+
+}
+
+
+
+
 /* end */
 
 
