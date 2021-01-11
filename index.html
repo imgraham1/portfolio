@@ -109,8 +109,8 @@
     <ul>
       <li><a href='http://imgraham1.pythonanywhere.com/'>Finished product</a></li>
       <li><a href='https://imgraham1996.medium.com/building-deploying-a-vertical-search-engine-from-scratch-a48bde9447aa'>Medium</a></li>
-      <!-- <li><a href='https://github.com/imgraham1'>Poster</a></li>
-      <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
+      <li><a href='https://github.com/imgraham1/search_engine_from_scratch'>GitHub</a></li>
+<!--       <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
     </ul>
   </div>
   </div>
@@ -151,15 +151,15 @@
   <img src="images/word2vec.png" alt="nn diagram" height=100px width=200px align='left' /><div>Natural language processing allows us to apply data science techniques to human language. Unfortunately, many of the popular methods in areas like machine learning, among others, are not able to directly deal with raw text as input. Converting tokens into word vectors allows us to represent human language as in a way that lets us leverage more data science techniques. The word2vec algorithm is likely the most effective way to make this conversion because it allows words to retain their semantic meaning. In this project I implement the state of the art word2vec algorithm from scratch using python and a dataset of Amazon reviews. To begin I removed stopwords, punctuation, and special characters as well as replaced the rare words with an <unk> token and dropped the overly common words. These filter decisions helps the algorithm better capture the meaning of words by not learning from the noise of frequent or in-frequent occurrences. This algorithm learns representations of words by looking at the tokens before and after the target word so that the vectors capture their meaning. I built this algorithm using gradient descent and negative sampling, as well as included an adjustable window so the window before and after the target word can be a tunable parameter to ensure you learn the best representation of each word. Once the model ran, I was able to use the created vectors to see the most similar words to each other, complete analogies, add and subtract words, and use them in different machine learning/data science tasks. To evaluate the success of my implementation I computed the top 10 most similar words to each word in the vocabulary using cosine similarity to ensure that words that are similar (I.e. big and large) were amongst the most similar returned words.
   </div>
 <br>
-  <!-- <div class='project_footer'>
+  <div class='project_footer'>
     See more on:<br><br>
     <ul>
-      <li><a href='https://github.com/imgraham1'>GitHub</a></li>
-      <li><a href='https://github.com/imgraham1'>Paper</a></li>
+      <li><a href='https://github.com/imgraham1/Word2Vec'>GitHub</a></li>
+<!--       <li><a href='https://github.com/imgraham1'>Paper</a></li>
       <li><a href='https://github.com/imgraham1'>Poster</a></li>
-      <li><a href='https://github.com/imgraham1'>Medium</a></li>
+      <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
     </ul>
-  </div> -->
+  </div>
   </div>
 <!-- ending one project entry -->
 
@@ -193,8 +193,8 @@
         See more on:<br><br>
         <ul>
           <li><a href='https://imgraham1996.medium.com/exploring-a-different-approach-for-evaluating-summarization-methods-c6cefe28039e'>Medium</a></li>
-          <!-- <li><a href='https://github.com/imgraham1'>Paper</a></li>
-          <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1/Summarization'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Poster</a></li>
           <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
         </ul>
       </div>
@@ -237,15 +237,15 @@
       <img src="images/class.jpg" alt="class" height=150px width=250px align='left' /><div>Text classification is a widely used method by NLP practitioners to determine if a given piece of text belongs to a certain category and I’d frequently used in tasks like sentiment analysis and spam detection. In this project, I code the näive bayes and logistic regression algorithms from scratch using Python to classify tweets as offensive or not offensive. The näive bayes algorithm classifies tweets by calculating the probability of the tweet being offensive given the tweet, as well as the probability of the tweet being not offensive given the tweet. Using this model I was able to achieve an accuracy of 79% correct classification. The logistic regression implementation uses a sigmoid activation function and gradient decent to learn a function to best approximate the output class given an input tweet. Using the logistic regression approach allowed me to achieve an accuracy of 82% correct classification. Coding both of these algorithms from scratch gave me a deep understanding of both approaches and a better understanding of how to correctly turn algorithms into code.
       </div>
     <br>
-      <!-- <div class='project_footer'>
+      <div class='project_footer'>
         See more on:<br><br>
         <ul>
-          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
-          <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1/Sentiment_analysis'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
-          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
         </ul>
-      </div> -->
+      </div>
       </div>
     <!-- ending one project entry -->
 
@@ -262,15 +262,15 @@
       <img src="images/database.png" alt="database" height=150px width=250px align='left' /><div>In college athletics, schools are commonly labeled as being either a “basketball” school or a “football” school based on which team usually performs better. This project uses a combination of web scraping, databases, Python, and Flask to create a resource for people that allows them to quickly access information about a school’s basketball and football team so that they can determine which sport they are better at. I began this project by crawling three different websites using the beautifulsoup4 package to collect data on 236 college’s basketball and football teams and crawled a total of webpages to collect all of the data. As I scraped the data, I populated a SQLite relational database that contains 5 tables.  I used user inputs to generate SQL queries that would extract the relevant information to the users search term. I used Flask to give users an intuitive interface to create their queries and have the results displayed to them in an easy to read way.
       </div>
     <br>
-      <!-- <div class='project_footer'>
+      <div class='project_footer'>
         See more on:<br><br>
         <ul>
-          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
-          <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1/College_team_comparisons'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
-          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
         </ul>
-      </div> -->
+      </div>
       </div>
     <!-- ending one project entry -->
 
@@ -322,6 +322,84 @@
           <li><a href='https://github.com/imgraham1'>Medium</a></li>
         </ul>
       </div> -->
+      </div>
+    <!-- ending one project entry -->
+	    
+	    
+
+    <!-- beginning one project entry -->
+      <div class='project_entry'><h1>Parking Ticket Analysis in Chicago</h1><br>
+        <ul>
+          <li>SQL</li>
+          <li>Big Data</li>
+          <li>Spark</li>
+	  <li>Hadoop</li>
+        </ul>
+        <br><br>
+      <img src="images/chicago.png" alt="topic" height=150px width=250px align='left' /><div>In this project, I use SQL and big data tools to help uncover any possible trends between the city of Chicago issuing parking tickets and the type of weather. I worked with over 10 years woth of parking ticket data that contained over 11 million rows. I used SQL to join the parking ticket data with the weather data so I was able to tell the temperature, percipitation, and type of weather for each day I had ticketing data for. To do this analysis, I categorized the data into different weather types and visualized them in comparison to eachother to determine whether or not any trends emerged. I originally hypothesized that it was likely that ticketing behavior may have changed in severe weather like high winds or heavy snow. To my surprise, I found that the number of tickets issued remained relatively constant regardless of the type of weather. 
+      </div>
+    <br>
+      <div class='project_footer'>
+        See more on:<br><br>
+        <ul>
+          <li><a href='https://github.com/imgraham1/Parking_ticket_analysis'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
+        </ul>
+      </div>
+      </div>
+    <!-- ending one project entry -->
+	    
+	    
+	    
+	    
+	        <!-- beginning one project entry -->
+      <div class='project_entry'><h1>College Basketball Analysis</h1><br>
+        <ul>
+          <li>Clustering</li>
+          <li>Exploratory Data Analysis</li>
+          <li>Unsupervised Machine Learning</li>
+        </ul>
+        <br><br>
+      <img src="images/bb.png" alt="topic" height=150px width=250px align='left' /><div>College basketball is an exciting sport to watch largely due to the unpredictability that many of the games have. Although there are always a few major upsets scattered throughout the season, it remains that there are certain programs that consistently perform better than others. In this project, I use exploratory data analysis and clustering techniques to try and identify some of the key characteristics that make teams successful, and if there are any groups of teams that stand out from others in terms of statistics. I used data from teh popular KenPom college basketball statistics website dating back 8 years until the 2019 season. After my initial exploration, I found things like offensive efficiency and shot percentage were amongdt the strongest correlation with season win percentage and to my surprise things like free throw pct and fouls were not as correlated. I also discovered a cluster of 7 teams that stood out using both k-means and hierarchical techniques which was made up of teams like Gonzaga, Kentucky, and Michigan - all of which have had some success in recent years. 
+      </div>
+    <br>
+      <div class='project_footer'>
+        See more on:<br><br>
+        <ul>
+          <li><a href='https://github.com/imgraham1/basketball_data_analysis'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
+        </ul>
+      </div>
+      </div>
+    <!-- ending one project entry -->
+	    
+	    
+	    
+	    
+	    
+	        <!-- beginning one project entry -->
+      <div class='project_entry'><h1>Analyzing College Basketball Performance</h1><br>
+        <ul>
+          <li>Dimensionality Reduction</li>
+          <li>Data Analysis</li>
+        </ul>
+        <br><br>
+      <img src="images/umbb.png" alt="topic" height=150px width=250px align='left' /><div>In this project, I was a participant in a data challenge where my team and I were tasked with analyzing the performance of the University of Michigan men's basketball team using heart rate and intensity data to discover possible explanations for boosted in-game performance. We focused our effort on examining the relationship between performance in practice to in-game dynamics. The data we weoked with was too high dimensional to make much sense of, so we used principal component analysis to reduce the dimensions and make it easier to analyze over time. We found that intense practices often led to mediocre in-game performance and that having a less intense week of practice led to a boost in game dynamics - especially once conference play started and the schedule was more demanding.
+      </div>
+    <br>
+      <div class='project_footer'>
+        See more on:<br><br>
+        <ul>
+          <li><a href='https://github.com/imgraham1/Basketball_analysis'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1'>Poster</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
+        </ul>
+      </div>
       </div>
     <!-- ending one project entry -->
 
