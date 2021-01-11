@@ -148,7 +148,7 @@
       <li>Machine Learning</li>
     </ul>
     <br><br>
-  <img src="images/word2vec.png" alt="nn diagram" height=100px width=200px align='left' /><div>Natural language processing allows us to apply data science techniques to human language. Unfortunately, many of the popular methods in areas like machine learning, among others, are not able to directly deal with raw text as input. Converting tokens into word vectors allows us to represent human language as in a way that lets us leverage more data science techniques. The word2vec algorithm is likely the most effective way to make this conversion because it allows words to retain their semantic meaning. In this project I implement the state of the art word2vec algorithm from scratch using python and a dataset of Amazon reviews. To begin I removed stopwords, punctuation, and special characters as well as replaced the rare words with an <unk> token and dropped the overly common words. These filter decisions helps the algorithm better capture the meaning of words by not learning from the noise of frequent or in-frequent occurrences. This algorithm learns representations of words by looking at the tokens before and after the target word so that the vectors capture their meaning. I built this algorithm using gradient descent and negative sampling, as well as included an adjustable window so the window before and after the target word can be a tunable parameter to ensure you learn the best representation of each word. Once the model ran, I was able to use the created vectors to see the most similar words to each other, complete analogies, add and subtract words, and use them in different machine learning/data science tasks. To evaluate the success of my implementation I computed the top 10 most similar words to each word in the vocabulary using cosine similarity to ensure that words that are similar (I.e. big and large) were amongst the most similar returned words.
+  <img src="images/word2vec.png" alt="nn diagram" height=100px width=200px align='left' /><div>Natural language processing allows us to apply data science techniques to human language. Unfortunately, many of the popular methods in areas like machine learning, among others, are not able to directly deal with raw text as input. Converting tokens into word vectors allows us to represent human language as in a way that lets us leverage more data science techniques. The word2vec algorithm is likely the most effective way to make this conversion because it allows words to retain their semantic meaning. In this project I implement the state of the art word2vec algorithm from scratch using python and a dataset of Amazon reviews. To begin I removed stopwords, punctuation, and special characters as well as replaced the rare words with an <unk> token and dropped the overly common words. This algorithm learns representations of words by looking at the tokens before and after the target word so that the vectors capture their meaning. I built this algorithm using gradient descent and negative sampling, as well as included an adjustable window so the window before and after the target word can be a tunable parameter to ensure you learn the best representation of each word. Once the model ran, I was able to use the created vectors to see the most similar words to each other, complete analogies, add and subtract words, and use them in different machine learning/data science tasks. To evaluate the success of my implementation I computed the top 10 most similar words to each word in the vocabulary using cosine similarity to ensure that words that are similar (I.e. big and large) were amongst the most similar returned words.
   </div>
 <br>
   <div class='project_footer'>
@@ -273,30 +273,33 @@
       </div>
       </div>
     <!-- ending one project entry -->
-
-
-    <!-- beginning one project entry -->
-      <div class='project_entry'><h1>Consulting Project</h1><br>
+	    
+	    
+	    
+	        <!-- beginning one project entry -->
+      <div class='project_entry'><h1>Analyzing College Basketball Performance</h1><br>
         <ul>
-          <li>Consulting</li>
-          <li>Technology</li>
-          <li>Data</li>
+          <li>Dimensionality Reduction</li>
+          <li>Data Analysis</li>
         </ul>
         <br><br>
-      <img src="images/consult.png" alt="consult" height=150px width=250px align='left' /><div>In this project, I was a part of a group that was assigned to a small business in Ann Arbor, MI to help the owner make better use of their data and technology to increase revenue. We conducted 4 interviews with past customers and 2 meetings with the business owner to gather information that would help us make a recommendation on how they could implement to earn more revenue. We were also able to work with the data collected from business transactions and website traffic that we considered when constructing our implementation. After analyzing the data fromo our interviews and meetings, we noticed that the business was struggling to get repeat customers. Because of this, we chose to propose a recommendation that focused on this shortcoming. We suggested that the business owner implements a strict follow up to each transaction as well as an email newsletter so that they could stay in contact and remain engaged with their customers. We helped the business owner implement these recommendations by suggesting different technologies that they could leverage to ensure that this solution was easy to maintain.
+      <img src="images/umbb.png" alt="topic" height=150px width=250px align='left' /><div>In this project, I was a participant in a data challenge where my team and I were tasked with analyzing the performance of the University of Michigan men's basketball team using heart rate and intensity data to discover possible explanations for boosted in-game performance. We focused our effort on examining the relationship between performance in practice to in-game dynamics. The data we weoked with was too high dimensional to make much sense of, so we used principal component analysis to reduce the dimensions and make it easier to analyze over time. We found that intense practices often led to mediocre in-game performance and that having a less intense week of practice led to a boost in game dynamics - especially once conference play started and the schedule was more demanding.
       </div>
     <br>
-      <!-- <div class='project_footer'>
+      <div class='project_footer'>
         See more on:<br><br>
         <ul>
-          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
-          <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1/Basketball_analysis'>GitHub</a></li>
+<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
-          <li><a href='https://github.com/imgraham1'>Medium</a></li>
+          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
         </ul>
-      </div> -->
+      </div>
       </div>
     <!-- ending one project entry -->
+
+
+
 
 
 
@@ -381,27 +384,44 @@
 	    
 	    
 	    
+	    
 	        <!-- beginning one project entry -->
-      <div class='project_entry'><h1>Analyzing College Basketball Performance</h1><br>
+      <div class='project_entry'><h1>Consulting Project</h1><br>
         <ul>
-          <li>Dimensionality Reduction</li>
-          <li>Data Analysis</li>
+          <li>Consulting</li>
+          <li>Technology</li>
+          <li>Data</li>
         </ul>
         <br><br>
-      <img src="images/umbb.png" alt="topic" height=150px width=250px align='left' /><div>In this project, I was a participant in a data challenge where my team and I were tasked with analyzing the performance of the University of Michigan men's basketball team using heart rate and intensity data to discover possible explanations for boosted in-game performance. We focused our effort on examining the relationship between performance in practice to in-game dynamics. The data we weoked with was too high dimensional to make much sense of, so we used principal component analysis to reduce the dimensions and make it easier to analyze over time. We found that intense practices often led to mediocre in-game performance and that having a less intense week of practice led to a boost in game dynamics - especially once conference play started and the schedule was more demanding.
+      <img src="images/consult.png" alt="consult" height=150px width=250px align='left' /><div>In this project, I was a part of a group that was assigned to a small business in Ann Arbor, MI to help the owner make better use of their data and technology to increase revenue. We conducted 4 interviews with past customers and 2 meetings with the business owner to gather information that would help us make a recommendation on how they could implement to earn more revenue. We were also able to work with the data collected from business transactions and website traffic that we considered when constructing our implementation. After analyzing the data fromo our interviews and meetings, we noticed that the business was struggling to get repeat customers. Because of this, we chose to propose a recommendation that focused on this shortcoming. We suggested that the business owner implements a strict follow up to each transaction as well as an email newsletter so that they could stay in contact and remain engaged with their customers. We helped the business owner implement these recommendations by suggesting different technologies that they could leverage to ensure that this solution was easy to maintain.
       </div>
     <br>
-      <div class='project_footer'>
+      <!-- <div class='project_footer'>
         See more on:<br><br>
         <ul>
-          <li><a href='https://github.com/imgraham1/Basketball_analysis'>GitHub</a></li>
-<!--           <li><a href='https://github.com/imgraham1'>Paper</a></li>
+          <li><a href='https://github.com/imgraham1'>GitHub</a></li>
+          <li><a href='https://github.com/imgraham1'>Paper</a></li>
           <li><a href='https://github.com/imgraham1'>Poster</a></li>
-          <li><a href='https://github.com/imgraham1'>Medium</a></li> -->
+          <li><a href='https://github.com/imgraham1'>Medium</a></li>
         </ul>
-      </div>
+      </div> -->
       </div>
     <!-- ending one project entry -->
+	    
+	    
+
+	    
+	    
+	    
+	    
+
+	    
+	    
+	    
+	    
+	    
+	    
+
 
 </div>
 
